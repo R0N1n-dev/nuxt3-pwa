@@ -11,7 +11,6 @@ export default defineNuxtConfig({
       },
       { hid: "description", name: "description", content: "" },
       { name: "format-detection", content: "telephone=no" },
-      //{ name: "theme_color", content: "#00ffff" },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
@@ -24,15 +23,17 @@ export default defineNuxtConfig({
     filename: "sw.js",
     workbox: {
       cleanupOutdatedCaches: true,
-      /* globPatterns: [
+    },
+    injectManifest: {
+      globPatterns: [
         // all packaged resources are stored here
         "/*",
         // add HTML and other resources for the root directory
-        "*.{svg,png,jpg}",
-        "*.html",
+        // "*.{svg,png,jpg}",
+        // "*.html",
         //"manifest.webmanifest",
         // be careful, not to add sw.js
-      ],*/
+      ],
     },
     manifest: {
       name: "Test Nuxt PWA",
