@@ -1,0 +1,22 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@types/node": "^18.16.19",
+    "@vite-pwa/nuxt": "^0.1.0",
+    "nuxt": "^3.6.5",
+    "workbox-core": "^7.0.0",
+    "workbox-precaching": "^7.0.0"
+  },
+  "dependencies": {
+    "boxicons": "^2.1.4"
+  }
+}
