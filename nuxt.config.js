@@ -25,15 +25,7 @@ export default defineNuxtConfig({
       cleanupOutdatedCaches: true,
     },
     injectManifest: {
-      globPatterns: [
-        // all packaged resources are stored here
-        "/*",
-        // add HTML and other resources for the root directory
-        // "*.{svg,png,jpg}",
-        // "*.html",
-        //"manifest.webmanifest",
-        // be careful, not to add sw.js
-      ],
+      globPatterns: ["**/*.{css,js,html,svg,png,ico,txt,woff2}"],
     },
     manifest: {
       name: "Test Nuxt PWA",
@@ -45,17 +37,17 @@ export default defineNuxtConfig({
       background_color: "#ffffff",
       icons: [
         {
-          src: "/android-chrome-192x192.png",
+          src: "android-chrome-192x192.png",
           sizes: "192x192",
           type: "image/png",
         },
         {
-          src: "/android-chrome-512x512.png",
+          src: "android-chrome-512x512.png",
           sizes: "512x512",
           type: "image/png",
         },
         {
-          src: "/android-chrome-512x512.png",
+          src: "android-chrome-512x512.png",
           sizes: "512x512",
           type: "image/png",
           purpose: "any maskable",

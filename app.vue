@@ -1,7 +1,7 @@
 <template>
   <div>
-    <NuxtPage />
     <VitePwaManifest />
+    <NuxtPage />
   </div>
 </template>
 
@@ -10,5 +10,5 @@ useHead({
   meta: [{
     name: "theme-color", content: "#00ffff"
   }]
-})
+});
 </script>

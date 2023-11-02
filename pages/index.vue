@@ -1,4 +1,13 @@
-<script setup></script>
+<script setup>
+const { $pwa } = useNuxtApp();
+
+//const toast = useToast();
+onMounted(() => {
+  if ($pwa.offlineReady) {
+    console.log('App ready to work offline');
+  }
+});
+</script>
 
 <template>
   <div>
